@@ -1,0 +1,76 @@
+tsutomu@TsutomuNote:~/coachtech/FrontEnd/tutorial6/chapter2/my-ts-project$ npm run lint
+
+> my-ts-project@1.0.0 lint
+> eslint src/**/*.ts
+
+
+/home/tsutomu/coachtech/FrontEnd/tutorial6/chapter2/my-ts-project/src/index.ts
+  0:0  error  Parsing error: Unable to parse the specified 'tsconfig' file. Ensure it's correct and has valid syntax.
+
+tsconfig.json(8,9): error TS5025: Unknown compiler option 'esModuleInterrop'. Did you mean 'esModuleInterop'?
+tsconfig.json(12,25): error TS1328: Property value can only be string literal, numeric literal, 'true', 'false', 'null', object literal or array literal.
+tsconfig.json(12,9): error TS5025: Unknown compiler option 'noImplicityAny'. Did you mean 'noImplicitAny'?
+tsconfig.json(12,27): error TS1327: String literal with double quotes expected.
+tsconfig.json(12,31): error TS1328: Property value can only be string literal, numeric literal, 'true', 'false', 'null', object literal or array literal.
+tsconfig.json(12,27): error TS5023: Unknown compiler option 'true'.
+tsconfig.json(16,9): error TS5025: Unknown compiler option 'noUnsuedParameters'. Did you mean 'noUnusedParameters'?
+tsconfig.json(25,9): error TS5025: Unknown compiler option 'forceConsistentCasignInFileNames'. Did you mean 'forceConsistentCasingInFileNames'?
+
+✖ 1 problem (1 error, 0 warnings)
+20260604 18:08:09
+
+tsutomu@TsutomuNote:~/coachtech/FrontEnd/tutorial6/chapter2/my-ts-project$ npm run lint
+
+> my-ts-project@1.0.0 lint
+> eslint src/**/*.ts
+
+
+/home/tsutomu/coachtech/FrontEnd/tutorial6/chapter2/my-ts-project/src/index.ts
+  0:0  error  Parsing error: Unable to parse the specified 'tsconfig' file. Ensure it's correct and has valid syntax.
+
+tsconfig.json(12,24): error TS5024: Compiler option 'noImplicitAny' requires a value of type boolean.
+tsconfig.json(12,26): error TS1327: String literal with double quotes expected.
+tsconfig.json(12,30): error TS1328: Property value can only be string literal, numeric literal, 'true', 'false', 'null', object literal or array literal.
+tsconfig.json(12,26): error TS5023: Unknown compiler option 'true'
+
+✖ 1 problem (1 error, 0 warnings)
+
+20260604 18:14:31
+
+tsutomu@TsutomuNote:~/coachtech/FrontEnd/tutorial6/chapter2/my-ts-project$ npm run lint
+
+> my-ts-project@1.0.0 lint
+> eslint src/**/*.ts
+
+tsutomu@TsutomuNote:~/coachtech/FrontEnd/tutorial6/chapter2/my-ts-project$ npm run format
+
+> my-ts-project@1.0.0 format
+> prettier --write src/**/*.ts
+
+src/index.ts 102ms
+tsutomu@TsutomuNote:~/coachtech/FrontEnd/tutorial6/chapter2/my-ts-project$ npm run build
+
+> my-ts-project@1.0.0 build
+> tsc
+
+tsconfig.json:7:29 - error TS5107: Option 'moduleResolution=node10' is deprecated and will stop functioning in TypeScript 7.0. Specify compilerOption '"ignoreDeprecations": "6.0"' to silence this error.
+  Visit https://aka.ms/ts6 for migration information.
+
+7         "moduleResolution": "node",
+                              ~~~~~~
+
+
+Found 1 error in tsconfig.json:7
+20260604 18:20:44
+tsutomu@TsutomuNote:~/coachtech/FrontEnd/tutorial6/chapter2/my-ts-project$ npm run build
+
+> my-ts-project@1.0.0 build
+> tsc
+
+tsconfig.json:6:19 - error TS5110: Option 'module' must be set to 'Node16' when option 'moduleResolution' is set to 'Node16'.
+
+6         "module": "ESNext",
+                    ~~~~~~~~
+
+
+Found 1 error in tsconfig.json:6

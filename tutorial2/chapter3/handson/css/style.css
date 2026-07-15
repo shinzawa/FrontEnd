@@ -1,0 +1,58 @@
+/* ページ全体の背景と基本フォント */
+body {
+    background-color: #f4f4f4; /* 薄いグレー */
+    font-family: sans-serif;
+    color: #333;
+}
+
+#profile-card {
+    width: 600px;
+    margin: 40px auto; /* 上下に50pxの余白、左右は中央寄せ */
+    background-color: #ffffff; /* 白い背景 */
+    padding: 30px;
+    border: 1px solid #ddd; /* 薄いグレーの境界線 */
+    border-radius: 8px; /* 角を丸く */
+}
+
+.profile-image { 
+    display: block; /* ブロック要素に変換 */ 
+    margin: 0 auto 20px; /* 上0, 左右auto(中央), 下20px */ 
+    border-radius: 50%; /* 角を50%丸めて円にする */ 
+}
+
+h1 {
+text-align: center; /* テキストを中央寄せ */
+color: #2c3e50;
+}
+
+h2 {
+border-bottom: 2px solid #3498db; /* 青い下線を追加 */
+padding-bottom: 5px;
+margin-top: 30px;
+}
+
+ul {
+list-style: none; /* リストの黒丸を削除 */
+padding: 0;
+}
+
+.social-links a {
+text-decoration: none; /* リンクの下線を削除 */
+color: white; /* リンクの色を青に */
+display: block; /* ブロック要素に変換 */
+padding: 10px 20px; /* パディングを追加 */
+background-color: #3498db; /* 青い背景 */
+border-radius: 5px; /* 角を丸く */
+transition: background-color 0.3s; /* 背景色の変化にアニメーションを追加 */
+}
+
+li a:hover {
+text-decoration: none; /* マウスが乗ったら下線を表示 */
+background-color: #2980b9; /* ホバー時の背景色 */
+}
+
+.social-links {
+display: flex; /* フレックスボックスを使用 */
+justify-content: center; /* 中央寄せ */
+gap: 15px; /* リンク間のスペース */
+}

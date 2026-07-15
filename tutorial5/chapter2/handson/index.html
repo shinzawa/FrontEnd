@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Blog Posts</title>
+  <style>
+    #posts-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 20px;
+    }
+    .post-card {
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 16px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Blog Posts</h1>
+  <div id="posts-container"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>

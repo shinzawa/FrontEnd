@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Blog Posts with State Handling</title>
+  <style>
+    #posts-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 20px;
+    }
+    .post-card {
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 16px;
+      margin-bottom: 10px;
+    }
+    /* 最初はデータリスト以外を非表示にしておく */
+    #loading, #error, #empty {
+      display: none;
+      font-size: 1.2em;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <h1>Blog Posts</h1>
+  <div id="posts-container"></div>
+
+  <!-- ローディング表示 -->
+  <div id="loading">データを読み込み中です...</div>
+
+  <!-- エラー表示 -->
+  <div id="error">エラーが発生しました。</div>
+
+  <!-- データが空の場合の表示 -->
+  <div id="empty">ユーザーデータが見つかりません。</div>
+
+  <script src="app.js"></script>
+</body>
+</html>
